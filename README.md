@@ -1,1 +1,1 @@
-# Logica_prog_Infinity
+# Infinity Dev Full Stack
