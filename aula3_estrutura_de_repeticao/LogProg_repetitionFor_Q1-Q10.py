@@ -4,23 +4,22 @@
 # #endregion
 
 # #region Q2: Faça um programa para imprimir os números pares de 1 a 20. Utilize a função range() para criar a coleção de números.
-# for i in range(1,21):
-#     if i % 2 == 0:
-#         print(i)
+for i in range(1,21):
+    if i % 2 == 0:
+        print(i)
 # #endregion
 
-# # #region Q3: Faça um programa para imprimir os números ímpares de 1 a 19. Utilize a função range() para criar a coleção de números.
-# # for i in range(1,20):
-# #     if i %2 != 0:
-# #         print(i)
-# # #endregion
-
-# #region Q4: Faça um programa para calcular a soma dos números de 1 a 100. Utilize a função range() para criar a coleção de números.
+# #region Q3: Faça um programa para imprimir os números ímpares de 1 a 19. Utilize a função range() para criar a coleção de números.
+for i in range(1,20):
+    if i %2 != 0:
+        print(i)
+#endregion
+#region Q4: Faça um programa para calcular a soma dos números de 1 a 100. Utilize a função range() para criar a coleção de números.
 # soma = 0
 # for i in range(1,101):
 #     soma += i
 # print(soma)
-# #endregion
+#endregion
 
 # # region Q5: Faça um programa para calcular a média de uma lista de 10 números.
 # soma = 0
