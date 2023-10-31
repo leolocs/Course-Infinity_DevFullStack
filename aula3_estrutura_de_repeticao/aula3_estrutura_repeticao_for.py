@@ -1,9 +1,8 @@
 # nome = "maria"
-
 # for letra in nome:
 #     print (letra)
 
-# #Faça um programa que solicite uma palavra ao usuário, conte a quantidade de letras "a" que a palavra possua e exiba na tela 
+#Faça um programa que solicite uma palavra ao usuário, conte a quantidade de letras "a" que a palavra possua e exiba na tela 
 # palavra = str(input("Digite uma palavra: ")).lower().strip()
 # letra_a = False
 # qtd = 0
