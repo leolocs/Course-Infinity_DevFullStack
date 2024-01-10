@@ -1,4 +1,4 @@
-# region - PROVA REVISÃO DE CONDIÇÃO E REPETIÇÃO
+# region - PROVA REVISÃO DE CONDIÇÃO E REPETIÇÃO, Login email e senha iguais
 # Faça um programa em python que determine em duas variáveis (senha e email) e que contenha uma senha e um email cadastrados antecipadamente, 
 # em seguida solicite ao usuário uma senha e um email e utilize o laço de repetição juntamente com a estrutura de condição para verificar se o email e a senha digitado 
 # pelo usuário é igual ao email e senha cadastrados antecipadamente. 
