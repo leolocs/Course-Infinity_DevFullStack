@@ -61,21 +61,26 @@ class Biblioteca:
         self.lista_membros.append(Membro)
         id_membro += 1
 
-    def emprestar_livro(self):
+    def emprestar_livro(self, ):
         id_livro = int(input("Digite qual o ID do livro após a pesquisa: "))
-        id_membro = str(input("Digite qual o numero do Membro: "))
-        for id_livro in self.catalogo_livro:
-            if self.disponivel:
-                livro = Livro(id=id_livro, titulo=titulo_livro, autor=autor_livro)
-                self.hist_livros.append(Livro)
+        num_membro = str(input("Digite qual o numero do Membro: "))
+    
+        for livro in self.catalogo_livro:
+            if id_livro == livro.id:
+                livro.disponivel == False
 
-        pass
+        for membro in self.lista_membros:
+            if num_membro == membro.id:
+                membro.hist_livros.append(livro)
 
-    def devolucao_livro(self):
-        pass
-
+    def devolver_livro(self):
+        id_livro = int(input("Qual o ID do livro que vc deseja devolver?: "))
+        for livro in self.catalogo_livro:
+            if id_livro == livro.id:
+                livro.disponivel == True
+        
     def pesquisar_livro(self):
-        pass
+        
 
 while True:
     menu = int(input("""Oque deseja fazer:
@@ -83,4 +88,30 @@ while True:
                      2 - Emprestar Livro
                      3 - Devolver Livro
                      4 - Pesquisar livro
-                     3 - Adicionar Membro"""))
+                     3 - Adicionar Membro
+                     0 - Sair do programa
+                     """))
+    match menu:
+        case 0:
+            print("Programa encerrado!")
+            break
+        case 1:
+            Biblioteca.add_livro()
+
+        case 2:
+            Biblioteca.emprestar_livro()
+        
+        case 3:
+            Biblioteca.devolver_livro()
+        
+        case 4:
+            op = int(input("""
+                           Deseja pesquisar o livro por:
+                           1 - Nome
+                           2 - Id
+                           3 - Autor 
+                           """))
+            match op:
+                case 1:
+                    nome = str(input("Qual nome do Livro: ")).lower().strip()
+                    
