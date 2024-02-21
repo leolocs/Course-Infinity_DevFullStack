@@ -9,12 +9,10 @@
 # status de empréstimo (disponível ou emprestado).
 
 # Classe Membro:
-
 # A classe Membro deve conter atributos como nome,
 # número de membro e histórico de livros emprestados.
 
 # Classe Biblioteca:
-
 # A classe Biblioteca deve conter um catálogo de livros
 # disponíveis, um registro de membros e métodos para
 # empréstimo, devolução e pesquisa de livros.
@@ -22,7 +20,6 @@
 # Operações da Biblioteca:
 
 # Implemente métodos na classe Biblioteca para:
-
 # Adicionar livros ao catálogo.
 # Adicionar membros à biblioteca.
 # Permitir empréstimo de livros por membros.
@@ -60,9 +57,18 @@ class Biblioteca:
 
     def add_membro(self):
         nome_membro = str(input("Digite o nome do membro: "))
-        
+        membro = Membro(nome=nome_membro,numero=id_membro)
+        self.lista_membros.append(Membro)
+        id_membro += 1
 
     def emprestar_livro(self):
+        id_livro = int(input("Digite qual o ID do livro após a pesquisa: "))
+        id_membro = str(input("Digite qual o numero do Membro: "))
+        for id_livro in self.catalogo_livro:
+            if self.disponivel:
+                livro = Livro(id=id_livro, titulo=titulo_livro, autor=autor_livro)
+                self.hist_livros.append(Livro)
+
         pass
 
     def devolucao_livro(self):
