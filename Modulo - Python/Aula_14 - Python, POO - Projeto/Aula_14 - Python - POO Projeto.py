@@ -38,13 +38,13 @@ class Livro:
         self.disponivel = True
 
 class Membro:
-    def __init__(self, nome=str,numero=int) -> None:
+    def __init__(self, nome=str,numero=int):
         self.nome = nome
         self.numero = numero
         self.hist_livros = []
 
 class Biblioteca:
-    def __init__(self) -> None:
+    def __init__(self):
         self.catalogo_livro = []
         self.lista_membros = []
     
@@ -79,7 +79,8 @@ class Biblioteca:
             if id_livro == livro.id:
                 livro.disponivel == True
         
-    def pesquisar_livro(self):
+    def pesquisar_livro(self, titulo=str, autor:str, id:int):
+
         
 
 while True:
@@ -114,4 +115,4 @@ while True:
             match op:
                 case 1:
                     nome = str(input("Qual nome do Livro: ")).lower().strip()
-                    
+                    Biblioteca.pesquisar_livro(nome=titulo)
