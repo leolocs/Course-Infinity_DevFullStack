@@ -60,17 +60,21 @@ class Biblioteca:
         membro = Membro(nome=nome_membro,numero=id_membro)
         self.lista_membros.append(Membro)
         id_membro += 1
+        print (f"O Membro {membro} foi adicionado, com sucesso!")
 
-    def emprestar_livro(self, ):
-        id_livro = int(input("Digite qual o ID do livro após a pesquisa: "))
-        num_membro = str(input("Digite qual o numero do Membro: "))
-    
+    def emprestar_livro(self):
+        try:
+            id_livro = int(input("Digite qual o ID do livro após a pesquisa: "))
+            num_membro = str(input("Digite qual o numero do Membro: "))
+        except:
+            print("Digite um ID e o numero do membro válidos!")
+
         for livro in self.catalogo_livro:
             if id_livro == livro.id:
                 livro.disponivel == False
 
         for membro in self.lista_membros:
-            if num_membro == membro.id:
+            if num_membro == membro.numero:
                 membro.hist_livros.append(livro)
 
     def devolver_livro(self):
@@ -80,7 +84,7 @@ class Biblioteca:
                 livro.disponivel == True
         
     def pesquisar_livro(self, titulo=str, autor:str, id:int):
-
+        pass
         
 
 while True:
