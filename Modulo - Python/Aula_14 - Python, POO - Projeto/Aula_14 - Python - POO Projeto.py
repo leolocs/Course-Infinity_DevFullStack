@@ -52,53 +52,64 @@ class Biblioteca:
         global id_livro
         while True:
             try:
-                titulo_livro = str(input("Digite o titulo do livro: "))
-                break
+                titulo_livro = str(input("Digite o titulo do livro: ")).lower()
+                if titulo_livro.isalpha() or titulo_livro.strip():
+                    break
+                else:
+                    print("Digite apenas letras!")
             except:
                 print(" Digite o nome de um livro válido!!")
         while True:
             try:                
-                autor_livro = str(input("Digite o autor do livro: "))
-                break
+                autor_livro = str(input("Digite o autor do livro: ")).lower()
+                if autor_livro.isalpha() or autor_livro.strip():
+                    break
+                else:
+                    print("Digite apenas letras!")
             except:
-                print("Digite um nome de Autor válido com apenas letras!")
+                print("Digite um nome de Autor válido!")
 
         livro = Livro(id=id_livro, titulo=titulo_livro, autor=autor_livro)
         id_livro += 1
         self.catalogo_livro.append(livro)
-        print("Livro adicionado com sucesso!")
+        print("Livro cadastrado com sucesso!")
         
 
     def add_membro(self):
         global num_membro
         while True:
             try:
-                nome_membro = str(input("Digite o nome do membro: "))
+                nome_membro = str(input("Digite o nome do membro: ")).lower()
+                if nome_membro.isalpha() or nome_membro.strip():
+                    break
+                else:
+                    print("Digite apenas letras!")
             except:
                 print("Digite um nome de membro válido!")
             
-            membro = Membro(numero=num_membro, nome=nome_membro)
-            self.lista_membros.append(membro)
-            num_membro += 1
-            print (f"O Membro {membro.nome}, ID = {membro.numero} foi adicionado, com sucesso!")
+        membro = Membro(numero=num_membro, nome=nome_membro)
+        self.lista_membros.append(membro)
+        num_membro += 1
+        print (f"O Membro {membro.nome}, ID = {membro.numero} foi adicionado, com sucesso!")
 
     def emprestar_livro(self):
         while True:
             try:
-                num_membro_escolhido = str(input("Digite qual o numero do Membro: "))
+                num_membro_escolhido = int(input("Digite qual o numero do Membro: "))
                 break
             except:
-                print("Digite um ID e o numero do membro válidos!")
+                print("Digite um numero do membro válido!")
+
         for membro_atual in self.lista_membros:
-            if membro_atual.id == num_membro_escolhido:
+            if membro_atual.numero == num_membro_escolhido:
                 while True:
                     try:
-                        id_livro_escolhido = int(input("Digite qual o ID do livro após a pesquisa: "))
+                        id_livro_escolhido = int(input("Digite qual o ID do livro para o emprestimo: "))
                         break
                     except:
-                        print("Digite um ID de livro válido!")
+                        print("Digite um ID de livro que seja um número válido!")
                 for livro_atual in self.catalogo_livro:
-                    if livro_atual == id_livro_escolhido and livro_atual.disponibilidade:
+                    if livro_atual.id == id_livro_escolhido and livro_atual.disponibilidade:
                         livro_atual.disponibilidade = False
                         membro_atual.hist_livros.append(livro_atual)
                         return f"O Livro {livro_atual.titulo} foi emprestado para o Membro: {membro_atual.nome}"
@@ -110,7 +121,7 @@ class Biblioteca:
                 id_livro_escolhido = int(input("Qual o ID do livro que vc deseja devolver?: "))
                 break
             except:
-                print("Digite um ID válido!")
+                print("Digite um numero de ID válido!")
             
         for livro in self.catalogo_livro:
             if livro.id == id_livro_escolhido and livro.disponibilidade == False:
@@ -134,13 +145,16 @@ class Biblioteca:
 biblioteca = Biblioteca()
 
 while True:
-    menu = int(input("""Oque deseja fazer:
+    menu = int(input("""
+                     ##### SGB: Sistema de Gerenciamento de bibliotecas #####
+                     Escolha uma das opções abaixo:
                      1 - Adicionar Livro
                      2 - Adicionar Membro
                      3 - Emprestar Livro
                      4 - Devolver Livro
                      5 - Pesquisar livro
                      0 - Sair do programa
+                     Oque deseja fazer:
                      """))
     match menu:
         case 0:
