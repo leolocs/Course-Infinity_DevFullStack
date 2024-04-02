@@ -1,0 +1,7 @@
+Temas de cores:
+  DRACULA
+  COLOR HIGH
+
+IMAGE PREVIEW: Extensão usada para mostrar miniatura de imagem na lateral do codigo, quando utilizado fonte de imagem no codigo
+MATERIAL ICON THEME: 
+    Extensão utilizada para alterar o icone de qual linguagem principal esta sendo usada no codigo e alteração das cores das pastas no projeto.
