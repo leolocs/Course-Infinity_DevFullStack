@@ -1,0 +1,23 @@
+h1{
+    color:aqua;
+    background-color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: medium;
+    font-style: italic;
+    /*text-decoration: line-through;*/
+    letter-spacing: 5px;
+}
+
+p{
+    line-height: 1.5;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    text-align: justify;
+}
+
+div{
+    background-color: chocolate;
+    width: 300px;
+    height: auto;
+}

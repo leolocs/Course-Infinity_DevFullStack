@@ -1,0 +1,28 @@
+header{
+    text-align: center;
+    background-color: lightgray;
+}
+
+article{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.krav{
+    font-family: calibri;
+}
+
+ul[
+    lis
+
+]
+h2{
+    font-family: Calibri;
+}
+
+p{
+    font-family: Calibri;
+    text-align: justify;
+}
