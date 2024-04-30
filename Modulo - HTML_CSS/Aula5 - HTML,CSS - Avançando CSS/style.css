@@ -1,0 +1,129 @@
+body{
+    background-color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/*HEADER*/
+.header{
+    background-color: beige;
+    /*Formas de fazer o padding*/
+    /*Padding total, todos os lados*/
+    padding: 20px;
+    /*padding individual*/
+    /*
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    */
+
+    /*padding geral, inline*/
+    /* padding: 5px 4px 10px 0px; */
+
+    /*Configurando margin, são as mesmas direções que padding*/
+    
+    margin-bottom: 20px;
+    /*Configurando Border, o border precisa ser configurado suas posições individuais*/
+    border: 2px rgba(77, 21, 21, 0.5) solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgb(0, 0, 0, 0.5);
+}
+
+.header_title{
+    color: chocolate;
+    font-style: italic;
+    letter-spacing: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header_list{
+    list-style: none;
+}
+
+.header_list_item{
+    color: (12,12,12);
+    text-decoration: none;
+}
+
+/*DISPLAY*/
+.display{
+    background-color: mediumaquamarine;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.display_title{
+    color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+}
+
+.display_list{
+    list-style: square;
+}
+
+.display_item_list{
+    color: grey;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.display_ver_mais{
+    text-decoration: none;
+    background-color: cornflowerblue;
+    color: rgb(29, 29, 29);
+}
+
+/*BOX-MODEL*/
+.box_model{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: cadetblue;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.boxModel_title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    font-size: 40px;
+    text-decoration: underline;
+    color: coral;   
+}
+
+.boxModel_box{
+    background-color: darkseagreen;    
+}
+
+.boxModel_item{
+    color: rgb(83, 10, 201);
+    font-size: 25px;
+}
+
+.boxModel_verMais{
+    color: white;
+    background-color:tomato;
+}
+
+.footer{
+    color: aliceblue;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+.footer_text{
+    padding: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.footerText_span{
+    font-style: italic;
+    color: antiquewhite;
+}
+
