@@ -1,0 +1,5 @@
+site para treinar os posicionamentos em CSS utilizando os seguintes atributos:
+justify-content: flex-start, center, flex-end, 
+align-items:flex-start, center, flex-end
+flex-direction:row, row-reverse, column, column-reverse
+flex-wrap:rowrap(default), wrap, wrap-reverse

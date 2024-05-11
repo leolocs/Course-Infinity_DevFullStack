@@ -1,0 +1,31 @@
+
+.titulo{
+    /*font-size: 60;*/
+    /*font-size: 4rem;*/
+}
+
+.box{
+    background-color: aliceblue;
+    width: 80vw; /* VW: a unidade vw significa viewport width, ou seja a largura do  */
+    max-width: 80vw; /* Max-width: significa que vai ser utilizado esse valor da proporção da tela, caso o conteúdo interno precise utilizar*/
+    height: 50vh;  /* VH: a unidade VH siginifica a proporção da tela que vai ser preenchida*/
+
+    display: flex; /* Responsável por organizar o conteúdo*/
+    justify-content: center; /* Justifica o conteúdo com as opções: flex-start, center, flex-end */
+    align-items:center; /* Ajusta o conteúdo da caixa na vertical com as opções: flex-start, center, flex-end*/
+    flex-direction: column; /* Ajusta o conteúdo da caixa alinhado em linha: "row" ou em coluna: "column"*/
+    gap: 20px; /* Cria um espaçamento entre as divs de uma caixa*/
+}
+
+.list-box{
+    display:flex;
+    justify-content: space-between; /* Espaçamento que pode ser utilizado between, */
+    padding: 0px 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: aqua;
+    color: red;
+    width: 100%;
+    height: 100px;
+
+}
