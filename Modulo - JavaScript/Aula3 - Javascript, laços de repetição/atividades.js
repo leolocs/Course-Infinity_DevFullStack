@@ -59,3 +59,41 @@ if (media>7){
 }else{
     document.write(`Sua media é ${media}, você está reprovado!`)
 }
+
+//#region 
+while(true){
+    const idade = Number(prompt("Digite uma idade [0 para sair]: "))
+
+    if(idade === 0){
+        break
+    }else if(idade >=18){
+        maior_18++
+    }
+}
+
+document.write(`${maior_18} pessoas maiores de idade`)
+//#endregion
+
+// #region - FAÇA UM PROGRAMA QUE PEDE UMA QUANTIDADE ILIMITADA DE NOTAS ATÉ QUE O USUÁRIO DIGITE UMA NOTA INVÁLIDA (NOTAS VÁLIDAS 0 A 10)
+// DEPOIS CALCULE A MÉDIA DO ALUNO E INFORME SE ELE FOI APROVADO OU REPROVADO (MÉDIA 7).
+
+let soma_total = 0
+let qtde_notas = 0
+
+while(true){
+    const nota = Number(prompt("Digite uma nota:"))
+    if(nota < 0 || nota > 10){
+        break
+    }else{
+        soma_total += nota
+        qtde_notas++
+    }
+}
+const media = soma_total / qtde_notas
+
+if(media>=7){
+    document.write(`Aprovado com a média ${media}`)
+}else{
+    document.write(`Reprovado com a média ${media}`)
+}
+//#endregion
