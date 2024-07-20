@@ -20,10 +20,12 @@ const peso = Number(prompt("Digite qual seu peso: "))
 altura_metros = altura/100
 imc = peso/(altura_metros*altura_metros)
 
-if(imc>=16 && imc<17){
+if(imc<16){
+    alert(`${nome}, seu IMC é de ${imc.toFixed(2)}, você está GRAVEMENTE ABAIXO DO PESO!`)
+}else if(imc>16 && imc<=16.99){
     alert(`${nome}, seu IMC é de ${imc.toFixed(2)}, você está MUITO ABAIXO DO PESO!`)
-}else if(imc>=17 && imc<=18.45){
-    alert(`${nome}, seu IMC é de ${imc.toFixed(2)}, você está ABAIXO DO PESO!`)
+}else if(imc>17 && imc <= 18.49){
+        alert(`${nome}, seu IMC é de ${imc.toFixed(2)}, você está ABAIXO DO PESO!`)
 }else if(imc>=18.5 && imc<=25){
     alert(`${nome}, seu IMC é de ${imc.toFixed(2)}, você está com PESO IDEAL!`)
 }else if(imc>25 && imc <=30){
