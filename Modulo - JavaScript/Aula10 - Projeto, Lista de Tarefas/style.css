@@ -1,0 +1,75 @@
+body{
+    /* Alinhamento, Posicionamento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* Tamanho, espaçamento */
+    padding: 50px;
+    gap: 30px;
+
+    /* Estetica */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main{
+    background-color: aliceblue;
+}
+
+h2{
+    font-size: 30pt;
+    font-weight: 500;
+}
+#lista_tarefas_form{
+    /* Alinhamento, Posicionamento */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    /* Tamanho, espaçamento */
+    margin: 30px;
+    padding: 20px;
+    height: 100px;
+    width: 300px;
+
+    /* Estetica */
+    color: white;
+    font-weight: 400;
+    background-color: rgb(101, 167, 206);
+    border-radius: 20px;
+
+}
+
+.tarefa{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(30, 110, 163);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin: 50px;
+    padding: 50px;
+
+    border-radius: 20px;
+}
+
+.tarefa_concluida{
+    color: white;
+    text-decoration: line-through;
+    background-color: rgb(37, 190, 50);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin: 50px;
+    padding: 50px;
+
+    border-radius: 20px;
+}
+
+.nova_tarefa{
+    
+    /* gap: 30px; */
+}
