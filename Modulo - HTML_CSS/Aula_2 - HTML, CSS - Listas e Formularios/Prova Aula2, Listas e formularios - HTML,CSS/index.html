@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Aula 2 - HTML, CSS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <head>
+        <!-- Nessa atividade, você deve criar um formulário em uma página web que atenda aos seguintes requisitos:
+        Incluir um campo de texto para o usuário inserir informações;
+        Incluir um campo do tipo password para o usuário inserir apenas senhas;
+        Incluir um campo de e-mail para o usuário inserir um endereço de e-mail válido;
+        Incluir uma lista com 5 checkboxes para o usuário selecionar mais de uma opção;
+        Incluir um radiobutton com 2 opções, onde apenas uma pode ser selecionada por vez;
+        Incluir um botão de envio (submit) para enviar as informações do formulário;
+        Incluir um botão para limpar (reset) o formulário e começar novamente.
+        Certifique-se de que o seu formulário esteja funcional e siga as boas práticas de HTML para a criação dos elementos.
+        <h3>Formulário de Contato</h3> -->
+    </head>
+    <main>
+        <form action="">
+            <h2>Prova - Formulário</h2>
+            <label for="nome">Nome: </label>
+            <input type="text" id="usuario" name="nome" placeholder="Digite seu Nome">
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="Digite seu Email">
+            <br>
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" name="senha" placeholder="Digite a senha">
+            <br>
+            <h3>Quais Linguagens de programação você sabe ou está aprendendo?</h3>
+            <input type="checkbox" id="py" name="linguagens_prog" value="python">
+            <label for="py">Python</label>
+            <input type="checkbox" id="javascript" name="linguagens_prog" value="javascript">
+            <label for="javascript">Javascript</label>
+            <input type="checkbox" id="php" name="linguagens_prog" value="php">
+            <label for="php">PHP</label>
+            <input type="checkbox" id="java" name="linguagens_prog" value="java">
+            <label for="java">Java</label>
+            <input type="checkbox" id="ruby" name="linguagens_prog" value="ruby">
+            <label for="ruby">Ruby</label>
+            <h3>Selecione o Sexo: </h3>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="mascunimo">Masculino</label>
+            <input type="radio" id="feminino" name="sexo" value="feminino">
+            <label for="feminino">Feminino</label>
+            <br><br>
+            <label for="msg">Envie alguma mensagem:</label>
+            <br>
+            <textarea name="msg" id="msg"></textarea>
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar formulário">
+
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
