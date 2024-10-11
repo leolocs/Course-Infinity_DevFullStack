@@ -1,3 +1,5 @@
+########## (DESAFIO INCOMPLETO) ##########
+
 # Primeiramente passaremos as informações! 
 # ```
 # A duração do desafio é do momento do anúncio do desafio até o dia 29/02/24 19:00h - Quinta-feira
