@@ -1,0 +1,82 @@
+body{
+    /* display: flex; */
+    /* justify-content: center; */
+
+    background-color: rgb(183, 252, 212);
+}
+
+header{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    margin: 50px;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30pt;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 20px;
+
+    background-color: azure;
+    border-radius: 20px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    list-style: none;
+}
+
+/* .valorInput{
+
+} */
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+    gap: 20px;
+
+}
+
+.form_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.saldo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50pt;
+}
+
+.mensagem{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20pt;
+}
+
